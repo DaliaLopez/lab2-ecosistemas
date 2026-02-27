@@ -10,7 +10,7 @@ export default function PostCard({ post, onDelete }: { post: Post; onDelete: (id
             <img src={post.imageUrl} className='w-full rounded-xl' />
 
             <div className="flex justify-between items-start gap-4">
-                <div className="flex-1 mt-2">
+                <div className="flex-1 mt-2 min-w-0">
 
                 <p className='font-bold text-xl'>{post.title}</p>
 
