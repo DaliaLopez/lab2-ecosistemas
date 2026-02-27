@@ -12,9 +12,9 @@ export default function PostCard({ post, onDelete }: { post: Post; onDelete: (id
             <div className="flex justify-between items-start gap-4">
                 <div className="flex-1 mt-2 min-w-0">
 
-                <p className='font-bold text-xl'>{post.title}</p>
+                <p className='font-bold text-xl min-w-0'>{post.title}</p>
 
-                <p className='mt-0.5 wrap-break-words'>{post.description}</p>
+                <p className='mt-0.5 wrap-break-words min-w-0'>{post.description}</p>
                 </div>
 
                 <button onClick={() => onDelete(post.id)} className="flex items-center gap-2 text-gray-500 hover:text-black transition-colors mt-8">
