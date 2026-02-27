@@ -14,7 +14,7 @@ export default function PostCard({ post, onDelete }: { post: Post; onDelete: (id
 
                 <p className='font-bold text-xl'>{post.title}</p>
 
-                <p className='mt-0.5'>{post.description}</p>
+                <p className='mt-0.5 wrap-break-words'>{post.description}</p>
                 </div>
 
                 <button onClick={() => onDelete(post.id)} className="flex items-center gap-2 text-gray-500 hover:text-black transition-colors mt-8">
